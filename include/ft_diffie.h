@@ -10,4 +10,7 @@ typedef struct s_user{
   unsigned long long shared_secret;
 } t_user;
 
+void init_alice(t_user *alice, unsigned long long g, unsigned long long p);
+void init_bob(t_user *bob, unsigned long long g, unsigned long long p);
+
 #endif
