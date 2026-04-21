@@ -1,4 +1,4 @@
-#include <ft_diffie.h>
+#include "ft_diffie.h"
 #include "ft_math.h"
 unsigned long long ft_russian_peasant(unsigned long long a, unsigned long long b, unsigned long long m)
 {
@@ -44,7 +44,7 @@ unsigned long long ft_attack(unsigned long long g, unsigned long long public_key
 
   i = 0;
   start = clock();
-  while (i < p)
+  while (i < p - 1)
   {
     if (ft_pow_mod(g, i, p) == public_key)
     {
